@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d20">
+
+<title>Block Arrow Blast | AAK Studio</title>
+<meta name="description" content="Play Block Arrow Blast: Puzzle Adventure by AAK Studio. Challenge your mind with exciting arrow and block puzzles!">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d20;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(8,13,32,.96);
+  border-bottom: 1px solid #26345b;
+}
+
+nav {
+  max-width: 1150px;
+  margin: auto;
+  padding: 18px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 900;
+  color: #65d9ff;
+}
+
+nav a {
+  color: #dce8ff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #65d9ff;
+}
+
+.hero {
+  min-height: 570px;
+  padding: 90px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    radial-gradient(ellipse at 50% 40%, #263c78 0%, transparent 55%),
+    linear-gradient(135deg,#101b3c,#080d20 75%);
+}
+
+.tag {
+  color: #65d9ff;
+  border: 1px solid #4166a8;
+  border-radius: 30px;
+  padding: 7px 18px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 68px);
+  line-height: 1.12;
+  font-weight: 900;
+  background: linear-gradient(90deg,#ffe16b,#ffffff,#65d9ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 22px auto;
+  color: #c6d3ed;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg,#10c9e9,#3478ff);
+  color: white;
+  padding: 15px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+  box-shadow: 0 5px 25px #147dff55;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 75px 22px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #aab9d8;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about p {
+  max-width: 780px;
+  margin: auto;
+  color: #c0cce4;
+  font-size: 17px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.feature {
+  background: linear-gradient(145deg,#17264b,#10182f);
+  border: 1px solid #304875;
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.feature .icon {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.feature h3 {
+  color: #65d9ff;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  color: #b9c7e2;
+  font-size: 14px;
+}
+
+.download {
+  text-align: center;
+  background: linear-gradient(135deg,#152c5b,#10152e);
+  border: 1px solid #385b98;
+  border-radius: 24px;
+  padding: 55px 20px;
+}
+
+.download p {
+  color: #c5d3ec;
+  margin-top: 12px;
+}
+
+footer {
+  border-top: 1px solid #26345b;
+  padding: 30px 20px;
+  text-align: center;
+  color: #93a5c7;
+  font-size: 13px;
+}
+
+footer a {
+  color: #65d9ff;
+  text-decoration: none;
+  margin: 0 9px;
+}
+
+@media(max-width:650px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0 7px;
+    font-size: 12px;
+  }
+
+  .hero {
+    min-height: 480px;
+  }
+
+  section {
+    padding: 55px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+  <div class="logo">⚡ BLOCK ARROW BLAST</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#download">Download</a>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<div class="hero" id="home">
+  <div class="tag">AAK STUDIO PRESENTS</div>
+  <h1>BLOCK ARROW BLAST</h1>
+  <p>
+    Aim your strategy. Clear the blocks. Unleash powerful arrow chains.
+    Experience a puzzle adventure that challenges your mind!
+  </p>
+  <a class="btn" href="#download">EXPLORE THE GAME</a>
+</div>
+
+<section class="about" id="about">
+  <h2 class="section-title">About The Game</h2>
+  <p class="section-subtitle">
+    A puzzle adventure by AAK Studio
+  </p>
+  <p>
+    Block Arrow Blast: Puzzle Adventure combines clever block placement,
+    directional arrows and satisfying chain reactions.
+    Plan your moves, clear lines, overcome obstacles and discover
+    how far your puzzle skills can take you.
+  </p>
+</section>
+
+<section id="features">
+  <h2 class="section-title">Game Features</h2>
+  <p class="section-subtitle">
+    Think smart. Make every move count.
+  </p>
+
+  <div class="features">
+
+    <div class="feature">
+      <div class="icon">🧩</div>
+      <h3>Smart Block Puzzles</h3>
+      <p>Place blocks carefully and find the right strategy to clear the board.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">➡️</div>
+      <h3>Arrow Blast Action</h3>
+      <p>Charge directional arrows and enjoy exciting blast effects.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">💥</div>
+      <h3>Powerful Boosters</h3>
+      <p>Use helpful power-ups when a puzzle gets challenging.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🏆</div>
+      <h3>Adventure Challenges</h3>
+      <p>Test your skills and progress through increasingly challenging puzzles.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="download">
+  <div class="download">
+    <h2 class="section-title">Ready for the Blast?</h2>
+    <p>
+      Join the adventure and challenge your puzzle-solving skills.
+    </p>
+    <!-- Replace the link below with your actual Google Play URL -->
+    <a class="btn" href="ADD_YOUR_GOOGLE_PLAY_LINK_HERE">
+      GET IT ON GOOGLE PLAY
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 AAK Studio. All Rights Reserved.</p>
+  <p style="margin-top:12px">
+    <a href="mailto:Anamak714@gmail.com">Contact Us</a>
+    <a href="https://aakstudio.github.io/block-arrow-blast-privacy/">Privacy Policy</a>
+  </p>
+  <p style="margin-top:12px">Made with passion by AAK Studio</p>
+</footer>
+
+</body>
+</html>
